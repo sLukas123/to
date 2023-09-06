@@ -1,0 +1,82 @@
+/* Base reset and global styles */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background: linear-gradient(120deg, #84fab0 0%, #8fd3f4 100%);
+  color: #2c3e50;
+  display: flex;
+  height: 100vh;
+  align-items: center;
+  justify-content: center;
+}
+
+/* App container */
+div {
+  background: rgba(255, 255, 255, 0.9); /* Semi-transparent white */
+  border-radius: 12px;
+  padding: 25px 30px;
+}
+
+/* Input styles */
+input[type="text"] {
+  width: calc(100% - 80px); /* Deducting the width of the button and some spacing */
+  padding: 12px;
+  border: 2px solid #e0e0e0;
+  border-radius: 8px;
+  transition: border-color 0.3s;
+}
+
+input[type="text"]:focus {
+  border-color: #3498db;
+  outline: none;
+}
+
+/* Button styles */
+button {
+  padding: 12px 15px;
+  border: none;
+  background-color: #3498db;
+  color: white;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  float: right;
+  margin-left: 10px; /* Space between input and button */
+}
+
+button:hover {
+  background-color: #2980b9;
+}
+
+/* Tasks list styles */
+ul {
+  margin-top: 25px;
+}
+
+li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  border-radius: 8px;
+  background: #f6f6f6;
+  margin-top: 10px;
+  transition: background-color 0.3s;
+}
+
+li:hover {
+  background-color: #eaeaea;
+}
+
+li button {
+  background-color: #e74c3c;
+}
+
+li button:hover {
+  background-color: #c0392b;
+}
